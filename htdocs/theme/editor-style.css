@@ -1,0 +1,115 @@
+@charset "UTF-8";
+/* editor */
+body.mceContentBody {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI','Noto Sans Japanese','Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+}
+p {
+  margin-bottom: 2em;
+}
+strong { font-weight: bold; }
+em { font-style: italic; }
+blockquote {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-bottom: 1em;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 2em
+}
+table th {
+	background-color: #eee;
+	padding: 4px;
+	border: 1px solid #AAAAAA;
+}
+table td {
+	padding: 4px;
+	border: 1px solid #AAAAAA;
+}
+ul {
+	list-style: circle;
+	padding-left: 1.2em;
+	margin-bottom: 1em;
+}
+ol {
+	list-style: decimal;
+	padding-left: 1.2em;
+	margin-bottom: 1em;
+}
+a {
+	text-decoration: underline;
+	color: #003CFF;
+}
+a:hover {
+	color: #FF0004;
+}
+/* img */
+img {
+	vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+img[class*="wp-image-"],
+img[class*="attachment-"],
+img.pict {
+	margin: 1em 1em 2em 0;
+	vertical-align: bottom;
+}
+img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2em 1em;
+	display: inline;
+  vertical-align: top;
+  float: right;
+}
+img.alignleft {
+	padding: 4px;
+	margin: 0 1em 2em 0;
+	display: inline;
+  vertical-align: top;
+  float: left;
+}
