@@ -10,7 +10,7 @@ npm install
 
 2.gulpfile.coffee内の"browser proxy"のURLを変更
 
-3.npm gulp（以降これだけでgulpが走るようになる）
+3.npm run gulp（以降これだけでgulpが走るようになる）
 
 
 
