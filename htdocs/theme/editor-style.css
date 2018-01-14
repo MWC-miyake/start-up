@@ -1,7 +1,10 @@
 @charset "UTF-8";
 /* editor */
 body.mceContentBody {
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI','Noto Sans Japanese','Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+    font-family: 'Helvetica Neue', 'Segoe UI','Noto Sans Japanese','Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+}
+body.mceContentBody >*:first-child {
+  margin-top: 0px;
 }
 p {
   margin-bottom: 2em;
@@ -16,39 +19,53 @@ blockquote {
   -webkit-margin-end: 40px;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: bold;
   line-height: 1.3em;
+  margin-top: 2em;
   margin-bottom: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
 }
 h2 {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   font-weight: bold;
   line-height: 1.3em;
+  margin-top: 2em;
   margin-bottom: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
 }
 h3 {
-  font-size: 1.6rem;
+  font-size: 2.0rem;
   font-weight: bold;
   line-height: 1.3em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.3em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 h5 {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.3em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 h6 {
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.3em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 
