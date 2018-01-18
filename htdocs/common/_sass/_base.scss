@@ -85,8 +85,16 @@ iframe[name=google_conversion_frame] {
 	position: absolute;
 	top: 0;
 }
-input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="search"], input[type="url"], select, textarea {
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="search"], input[type="url"] {
   border: 1px solid #bbb;
   font-size: 1em;
   text-indent: 0.5em;
+}
+select {
+  border: 1px solid #bbb;
+  font-size: 1em;
+}
+textarea {
+  padding: 0.5em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI','Noto Sans Japanese','Hiragino Kaku Gothic ProN', meiryo, sans-serif;
 }
