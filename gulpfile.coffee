@@ -7,19 +7,15 @@ plumber = require 'gulp-plumber'
 sourcemaps = require 'gulp-sourcemaps'
 
 gulp.task 'server', ->
-  browser proxy: 'http://localhost/aeon-lp/htdocs'
+  browser proxy: 'http://localhost/xxxx/htdocs'
 
 gulp.task 'sass',->
   gulp.src 'htdocs/common/_sass/**/*scss'
+    .pipe plumber()
     .pipe sourcemaps.init()
     .pipe sassGlob()
     .pipe sass(outputStyle: 'expanded')
     .pipe autoprefixer()
-    .pipe plumber(errorHandler: (err) ->
-      console.log err.messageFormatted
-      @emit 'end'
-      return
-    )
     .pipe sourcemaps.write('./')
     .pipe gulp.dest 'htdocs/common/css'
     .pipe browser.reload(stream: true)
