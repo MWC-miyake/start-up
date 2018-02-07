@@ -1,7 +1,8 @@
 【gulpについて】
 
 事前：
-node.jsはインストールされているか
+node.jsをインストールしておく。
+バージョンは任意で調整すること（当環境はv6.11.3）
 
 gulp実行：
 1.まず作業ディレクトリ(例：hoge)に移動し、インストール。
@@ -10,26 +11,30 @@ npm install
 
 2.gulpfile.coffee内の"browser proxy"のURLを変更
 
-3.npm run gulp（以降これだけでgulpが走るようになる）
-
+3.npm run gulp
+※グローバルにもgulpをインストールしている場合は、"gulp"のみでOK
 
 
 【SASSについて】※SMACSSをベースとしています。
 ・lib
 →_font.scss …ウェブフォント等、特殊なフォント使用時に記述
 →_mixin.scss …mixinを記述
-→_setting.scss …色やサイズの設定
+→_setting.scss …各種設定
+
+・normalize
+normalize.cssとreset.css、どちらかの読み込みを選択する。
+（デフォルトはnormalize。使いやすいほうでOK）
 
 ・_base.scss
-→ セレクタそのものへの記述。リセット含む
+デフォルトスタイル及びセレクタそのものへのスタイル指定
 
 ・_layout.scss
 ページのエリア分けを行う。骨組み。class名の前に"l-"をつける。
 （メジャーコンポーネント）
-例：l-header,l-footer
+例：.l-header, .l-footer
 繰り返し項目や、検索フォーム等ページ内で使いまわせるものにも使う。
 （マイナーコンポーネント）
-例：l-caontainer-12,l-grid-06
+例：.l-container-12, .l-grid-06
 
 ・_module.scss
 再利用可能なパーツ。ページを構成する個々のコンポーネント（部品）
@@ -39,7 +44,7 @@ npm install
 
 ・_state.scss
 ステートルールは、レイアウトやモジュールのクラスと合わせて使う。
-ステートの命名ルールは is- から始まるものとして、特定のレイアウトに依存しているものはレイアウト名を含めるようする。
+ステートの命名ルールは is- から始まるものとして、特定のレイアウトに依存しているものはレイアウト名を含めるようにする。
 例：is-active,is-search-active
 
 ・_theme.scss

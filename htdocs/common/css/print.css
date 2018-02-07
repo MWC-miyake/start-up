@@ -1,28 +1,18 @@
-@media print{
-@page {
-	margin: 19.05mm;
-}
-body {
-	zoom: 0.65;
-	-ms-zoom: 0.65;
-	-webkit-zoom: 0.65;
-	-moz-transform:  scale(0.65,0.65);
-	-moz-transform-origin: left top;
-	overflow: visible !important;
-}
-#header {
-	display: none !important;
-}
-#footer {
-	display: none !important;
-}
-.btnArea {
-	display: none !important;
-}
-#slideShow {
-	display: none !important;
-}
-#goTop {
-	display: none !important;
-}
+@media print {
+  @page {
+    margin: 19.05mm;
+  }
+  body {
+    zoom: 0.65;
+    -ms-zoom: 0.65;
+    -webkit-zoom: 0.65;
+    -moz-transform:  scale(0.65,0.65);
+    -moz-transform-origin: left top;
+    overflow: visible !important;
+  }
+  #header,
+  footer,
+  aside {
+    display: none !important;
+  }
 }

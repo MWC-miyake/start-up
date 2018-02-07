@@ -1,9 +1,19 @@
 @charset "UTF-8";
 @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url(//fonts.googleapis.com/earlyaccess/sawarabimincho.css);
+@import "lib/font";
 
-@import "lib/*";
+// Include Library
+@import "lib/mixin";
+@import "lib/setting";
+
+// Choose "normalize" or "reset"
+@import "normalize/normalize";
+
+// Include Base Style
 @import "base";
+
+// Styling Start
 @import "layout";
 @import "module";
 @import "state";
