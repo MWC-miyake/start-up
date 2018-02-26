@@ -42,7 +42,7 @@ npm install
 
 ・normalize
 normalize.cssとreset.css、どちらかの読み込みを選択する。
-（デフォルトはnormalize。使いやすいほうでOK）
+（デフォルトはreset。使いやすいほうでOK）
 
 ・_base.scss
 デフォルトスタイル及びセレクタそのものへのスタイル指定
