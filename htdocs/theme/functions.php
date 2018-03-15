@@ -1,14 +1,20 @@
 <?php
-// include functions
-get_template_part('functions/editor');
-// get_template_part('functions/menu');
-get_template_part('functions/mobile');
-// get_template_part('functions/pagenation');
-// get_template_part('functions/short_code');
-// get_template_part('functions/thumbnails');
-// get_template_part('functions/widgets');
+// Add Theme Supports
+add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
-// theme customizer
+// Include Models
+get_template_part('functions/model/editor');
+get_template_part('functions/model/menu');
+get_template_part('functions/model/mobile');
+get_template_part('functions/model/short_code');
+get_template_part('functions/model/thumbnails');
+get_template_part('functions/model/widgets');
+
+// Include Views
+get_template_part('functions/view/pagenation');
+
+// Theme Customizer
 // get_template_part('customizer/customize');
 // get_template_part('customizer/style');
 // get_template_part('customizer/customizer-repeater/functions');
