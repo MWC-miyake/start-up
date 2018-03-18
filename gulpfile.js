@@ -5,6 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var browser = require('browser-sync');
 var plumber = require('gulp-plumber');
 var sourcemaps = require('gulp-sourcemaps');
+var wait = require('gulp-wait');
 
 gulp.task('server', function() {
   browser({
@@ -17,6 +18,7 @@ gulp.task('sass', function() {
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
+    .pipe(wait(100))
     .pipe(sass({
       outputStyle: 'expanded'
     }))
