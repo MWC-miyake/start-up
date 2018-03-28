@@ -12,7 +12,11 @@ get_template_part('functions/model/thumbnails');
 get_template_part('functions/model/widgets');
 
 // Include Views
+get_template_part('functions/view/category_list');
+get_template_part('functions/view/new');
 get_template_part('functions/view/pagenation');
+get_template_part('functions/view/thumbnails');
+get_template_part('functions/view/title');
 
 // Theme Customizer
 // get_template_part('customizer/customize');

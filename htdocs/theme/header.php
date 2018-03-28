@@ -7,6 +7,7 @@
 <?php if(is_front_page()): ?>
 <meta name="description" content="<?php bloginfo('description'); ?>"/>
 <?php endif; ?>
+<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" type="text/css" />
 <?php wp_head(); ?>
 </head>
 <body>
