@@ -3,20 +3,17 @@
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
 
-// Include Models
-get_template_part('functions/model/editor');
-get_template_part('functions/model/menu');
-get_template_part('functions/model/mobile');
-get_template_part('functions/model/short_code');
-get_template_part('functions/model/thumbnails');
-get_template_part('functions/model/widgets');
-
-// Include Views
-get_template_part('functions/view/category_list');
-get_template_part('functions/view/new');
-get_template_part('functions/view/pagenation');
-get_template_part('functions/view/thumbnails');
-get_template_part('functions/view/title');
+// Include Functions
+get_template_part('functions/editor');
+get_template_part('functions/menu');
+get_template_part('functions/mobile');
+get_template_part('functions/short_code');
+get_template_part('functions/widgets');
+get_template_part('functions/category_list');
+get_template_part('functions/new');
+get_template_part('functions/pagenation');
+get_template_part('functions/thumbnails');
+get_template_part('functions/title');
 
 // Theme Customizer
 // get_template_part('customizer/customize');
