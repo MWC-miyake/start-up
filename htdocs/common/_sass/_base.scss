@@ -45,3 +45,7 @@ a:not(.noOpa) {
 *:focus {
 	outline:none;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
