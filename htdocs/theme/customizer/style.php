@@ -1,4 +1,5 @@
 <?php
+function customizer_color() {
 $color_main = get_theme_mod( 'color_main', '#222');
 $color_sub = get_theme_mod( 'color_sub', '#adb8bf');
 $color_btn = get_theme_mod( 'color_btn', '#1877ff');
@@ -98,3 +99,6 @@ $menu_sp_rgb["blue"] = hexdec(substr($color_menu_sp_rgb, 4, 2));
   
   
 </style>
+<?php
+}
+add_action( 'wp_head', 'customizer_color');

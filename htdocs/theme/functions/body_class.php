@@ -6,7 +6,7 @@ function show_body_class( $default = null ) {
   global $post;
   $slug_name = $post->post_name;
   
-  if( is_front_page ){
+  if( is_front_page() ){
     $html = '<body class="top">';
   } elseif( is_page_template('page-contact.php') ) {
     $html = '<body class="contact lower">';
