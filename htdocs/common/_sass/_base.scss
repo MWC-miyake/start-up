@@ -1,0 +1,51 @@
+/*******************************
+Default Style
+*******************************/
+html {
+  font-size: 62.5%; /* sets the base font to 10px for easier math */
+}
+body {
+  font-size: 1.6rem;
+  font-family: $font;
+  color: $color;
+}
+body * {
+	-webkit-text-size-adjust: 100%;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+iframe[name=google_conversion_frame] {
+	position: absolute;
+	top: 0;
+}
+input,button,textarea,select {
+	color: $color;
+	font-family: $font;
+}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+select {
+	padding: 10px;
+	border-radius: 5px;
+	border: solid 1px #aaa;
+}
+a:not(.noOpa) {
+  img {
+    transition: .3s;
+  }
+  &:hover {
+    img {
+      opacity: 0.8;
+    }
+  }
+}
+*:focus {
+	outline:none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,321 @@
+/*
+Theme Name:  sample
+Theme URI: http://sample.com/
+Description: Sample Theme.
+Version: 1.0.0
+Author: Takafumi Miyake
+Author URI: https://t-mwc.com/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/ 
+
+.wp_post:after {
+	content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.wp_post {
+  display: block;
+}
+.wp_post * {
+  max-width: 100%;
+}
+.wp_post p {
+  margin-bottom: 2em;
+}
+.wp_post pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.wp_post strong { font-weight: bold; }
+.wp_post em { font-style: italic; }
+.wp_post blockquote {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 40px;
+  -webkit-margin-end: 40px;
+}
+.wp_post > *:first-child {
+  margin-top: 0px;
+}
+.wp_post h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.wp_post h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+.wp_post h3 {
+  font-size: 2.0rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.wp_post h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.wp_post h5 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.wp_post h6 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.3em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.wp_post table {
+	width: 100%;
+	margin-bottom: 2em
+}
+.wp_post table th {
+	background-color: #eee;
+	padding: 4px;
+	border: 1px solid #AAAAAA;
+}
+.wp_post table td {
+	padding: 4px;
+	border: 1px solid #AAAAAA;
+}
+.wp_post ul {
+	list-style: disc;
+	padding-left: 1.2em;
+	margin-bottom: 1em;
+}
+.wp_post ol {
+	list-style: decimal;
+	padding-left: 1.2em;
+	margin-bottom: 1em;
+}
+.wp_post a {
+	text-decoration: underline;
+	color: #003CFF;
+}
+.wp_post a:hover {
+	color: #FF0004;
+}
+/* img */
+.wp_post img {
+	vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+.wp_post img[class*="wp-image-"],
+.wp_post img[class*="attachment-"],
+.wp_post img.pict {
+	margin: 1em 1em 2em 0;
+	vertical-align: bottom;
+}
+.wp_post img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp_post img.alignright {
+	padding: 4px;
+	margin: 0 0 2em 1em;
+	display: inline;
+  vertical-align: top;
+  float: right;
+}
+.wp_post img.alignleft {
+	padding: 4px;
+	margin: 0 1em 2em 0;
+	display: inline;
+  vertical-align: top;
+  float: left;
+}
+
+/*Pagenation*/
+.pageNation {
+	text-align: center;
+	margin: 0 auto;
+}
+.pageNation ul {
+    margin: 0;
+}
+.pageNation li {
+	font-size: 13px;
+	margin-right: 6px;
+	display: inline-block;
+	color: #008131;
+	text-align: center;
+	background-color: #faf7f1;
+	border: 1px solid #D4CBB6;
+	border-radius: 4px;
+}
+.pageNation li.active {
+	padding: 4px 12px;
+	color: #fff;
+	background-color: #429a63;
+}
+.pageNation li a {
+	display: block;
+	padding: 4px 12px;
+}
+.pageNation li a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #429a63;
+}
+.nextPostBg {
+	text-align: right;
+}
+.nextPostBg p {
+	display: inline-block;
+	margin-left: 3px;
+}
+.nextPostBg p a {
+	padding: 4px 10px;
+	display: block;
+	color: #fff;
+	background-color: #7b7b7b;
+	text-decoration: none;
+}
+.nextPostBg p a:hover {
+	color: #7b7b7b;
+	background-color: #fff;
+	border: #7b7b7b 1px solid;
+	padding: 3px 9px;
+	text-decoration: none;
+}
+
+/*********************************
+MW WP FORM
+*********************************/
+.mw_wp_form_confirm .confirmHidden {
+	display: none !important;
+}
+.mw_wp_form_input .inputHidden {
+	display: none !important;
+}
+.mw_wp_form_confirm .inputHidden {
+	display: block !important;
+}
+
+/*********************************
+Comments
+*********************************/
+#commentArea {
+	text-align: left;
+}
+h3#comments{
+	padding: 10px 0 10px 10px;
+	clear: both;
+	margin-top:40px;
+	border-top:1px solid #ddd;
+}
+	
+.commentlist{
+  margin-bottom:30px;
+}
+.commentlist li {
+  border-top:1px solid #ddd;
+  padding:15px 0 0 55px;
+  position:relative;
+}
+.commentlist .avatar {
+  background:#fff;
+  border:1px solid #ddd;
+  left:0;
+  margin:0 16px 0 0;
+  padding:3px;
+  position:absolute;
+  top:15px;
+}
+.commentlist .comment-meta{
+  margin-bottom:10px;
+}
+.commentlist .comment-meta a{
+  color: #999;
+  font-size:85%;
+  text-decoration:none;
+}
+.commentlist .comment-meta a:hover{
+  color: #ccc;
+}
+.commentlist p{
+  margin-bottom:15px;
+}
+.commentlist .reply a{
+  position: absolute;
+  top: 15px;
+  right: 0;
+  padding: 2px 10px;
+  background: #ddd;
+  font-size: 85%;
+  color: #333;
+  text-decoration: none;
+}
+.commentlist .reply a:hover {
+  color: #999
+}
+#respond{
+  margin-top:70px;
+}
+#respond h3{
+  border-bottom:1px solid #ddd;
+  border-top:1px solid #ddd;
+  padding:10px 0 10px 10px;
+}
+#commentform{
+  margin-top:20px;
+}
+#commentform p{
+  clear: both
+}
+#commentform label{
+  margin: 10px 0;
+  vertical-align: top;
+  width: 30%;
+  display: inline-block;
+}
+#commentform input[type="text"], #commentform textarea{
+  margin: 5px 0 10px;
+}
+#commentform input[type="text"]:focus, #commentform textarea:focus{
+  border:1px solid #06c;
+}
+
+/*********************************
+404
+*********************************/
+#error404 main h2 {
+	font-size: 30px;
+	color: #FF0004;
+	text-align: center;
+	padding: 160px 0 60px;
+}
+#error404 main p {
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 100px;
+}

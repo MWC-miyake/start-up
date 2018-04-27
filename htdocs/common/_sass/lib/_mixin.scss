@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+@mixin fontSize($size: 16) {
+  $rem: $size / 10;
+  font-size: $size + px;
+  font-size: $rem + rem;
+}
+
+@mixin fontSet($size: 16, $lineHeight: 24, $mb: 0, $mt: 0) {
+  $rem: $size / 10;
+  $lineSum: $lineHeight / $size;
+  $nMargin: -(($lineHeight - $size) / 2);
+  font-size: $size + px;
+  font-size: $rem + rem;
+  line-height: $lineSum;
+  margin-top: ($nMargin + $mt) + px;
+  margin-bottom: ($nMargin + $mb) + px;
+}
+
+@mixin resPadding {
+  padding-left: $resPadding;
+  padding-right: $resPadding;
+}
+
+@mixin resFontSize($size: 16) {
+  font-size: ($size / $designSize)*100 + vw;
+}
+
+@mixin floatNon {
+  float: none;
+  width: auto;
+}
+
+@mixin break1 {
+  @media only screen and (max-width: $breakPoint1) {
+	  @content;
+  }
+}
+@mixin break2 {
+  @media only screen and (max-width: $breakPoint2) {
+	  @content;
+  }
+}
