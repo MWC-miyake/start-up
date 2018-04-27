@@ -9,35 +9,39 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */ 
 
-.wp-post:after {
+.wp_post:after {
 	content: ".";
   display: block;
   clear: both;
   height: 0;
   visibility: hidden;
 }
-.wp-post {
+.wp_post {
   display: block;
 }
-.wp-post * {
+.wp_post * {
   max-width: 100%;
 }
-.wp-post p {
+.wp_post p {
   margin-bottom: 2em;
 }
-.wp-post strong { font-weight: bold; }
-.wp-post em { font-style: italic; }
-.wp-post blockquote {
+.wp_post pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.wp_post strong { font-weight: bold; }
+.wp_post em { font-style: italic; }
+.wp_post blockquote {
   display: block;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 40px;
   -webkit-margin-end: 40px;
 }
-.wp-post > *:first-child {
+.wp_post > *:first-child {
   margin-top: 0px;
 }
-.wp-post h1 {
+.wp_post h1 {
   font-size: 2.6rem;
   font-weight: bold;
   line-height: 1.3em;
@@ -48,7 +52,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
 }
-.wp-post h2 {
+.wp_post h2 {
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 1.3em;
@@ -59,28 +63,28 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   border-bottom: 1px solid #000;
   border-top: 1px solid #000;
 }
-.wp-post h3 {
+.wp_post h3 {
   font-size: 2.0rem;
   font-weight: bold;
   line-height: 1.3em;
   margin-top: 2em;
   margin-bottom: 1em;
 }
-.wp-post h4 {
+.wp_post h4 {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.3em;
   margin-top: 2em;
   margin-bottom: 1em;
 }
-.wp-post h5 {
+.wp_post h5 {
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.3em;
   margin-top: 2em;
   margin-bottom: 1em;
 }
-.wp-post h6 {
+.wp_post h6 {
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.3em;
@@ -88,61 +92,61 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   margin-bottom: 1em;
 }
 
-.wp-post table {
+.wp_post table {
 	width: 100%;
 	margin-bottom: 2em
 }
-.wp-post table th {
+.wp_post table th {
 	background-color: #eee;
 	padding: 4px;
 	border: 1px solid #AAAAAA;
 }
-.wp-post table td {
+.wp_post table td {
 	padding: 4px;
 	border: 1px solid #AAAAAA;
 }
-.wp-post ul {
-	list-style: circle;
+.wp_post ul {
+	list-style: disc;
 	padding-left: 1.2em;
 	margin-bottom: 1em;
 }
-.wp-post ol {
+.wp_post ol {
 	list-style: decimal;
 	padding-left: 1.2em;
 	margin-bottom: 1em;
 }
-.wp-post a {
+.wp_post a {
 	text-decoration: underline;
 	color: #003CFF;
 }
-.wp-post a:hover {
+.wp_post a:hover {
 	color: #FF0004;
 }
 /* img */
-.wp-post img {
+.wp_post img {
 	vertical-align: middle;
   height: auto;
   max-width: 100%;
 }
-.wp-post img[class*="wp-image-"],
-.wp-post img[class*="attachment-"],
-.wp-post img.pict {
+.wp_post img[class*="wp-image-"],
+.wp_post img[class*="attachment-"],
+.wp_post img.pict {
 	margin: 1em 1em 2em 0;
 	vertical-align: bottom;
 }
-.wp-post img.aligncenter {
+.wp_post img.aligncenter {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
-.wp-post img.alignright {
+.wp_post img.alignright {
 	padding: 4px;
 	margin: 0 0 2em 1em;
 	display: inline;
   vertical-align: top;
   float: right;
 }
-.wp-post img.alignleft {
+.wp_post img.alignleft {
 	padding: 4px;
 	margin: 0 1em 2em 0;
 	display: inline;
