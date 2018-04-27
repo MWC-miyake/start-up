@@ -1,8 +1,0 @@
-@charset "UTF-8";
-/* editor */
-body.mceContentBody {
-    font-family: 'Helvetica Neue', 'Segoe UI','Noto Sans Japanese','Hiragino Kaku Gothic ProN', meiryo, sans-serif;
-}
-body.mceContentBody >*:first-child {
-  margin-top: 0px;
-}
