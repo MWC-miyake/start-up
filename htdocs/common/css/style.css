@@ -69,8 +69,7 @@ body {
 body * {
   -webkit-text-size-adjust: 100%;
   -webkit-appearance: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 iframe[name=google_conversion_frame] {
@@ -95,7 +94,6 @@ select {
 }
 
 a:not(.noOpa) img {
-  -webkit-transition: .3s;
   transition: .3s;
 }
 
@@ -105,6 +103,11 @@ a:not(.noOpa):hover img {
 
 *:focus {
   outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .clearfix:after {

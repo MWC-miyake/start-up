@@ -1,20 +1,20 @@
 /*
 Error: Invalid Windows-31J character "\xE6"
-        on line 3 of C:/Users/takafumi/Desktop/tech/csp-v2/start-up/htdocs/common/_sass/lib/_setting.scss
-        from line 8 of C:\Users\takafumi\Desktop\tech\csp-v2\start-up\htdocs\common\_sass\style.scss
+        on line 3 of C:/MyKnowledge/Code/start-up/htdocs/common/_sass/lib/_setting.scss
+        from line 8 of C:\MyKnowledge\Code\start-up\htdocs\common\_sass\style.scss
 
 1: // Font Setting
 2: $font: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI','Noto Sans Japanese','Hiragino Kaku Gothic ProN', meiryo, sans-serif;
 3: $serif: "Times New Roman", "Hiragino Mincho ProN", "Yu Mincho medium", "Sawarabi Mincho", "HG明朝E", "ＭＳ Ｐ明朝", serif;
 4: 
 5: // Color Setting
-6: $default: #292826;
+6: $color: #292826;
 7: 
 8: // Size Setting
 
 Backtrace:
-C:/Users/takafumi/Desktop/tech/csp-v2/start-up/htdocs/common/_sass/lib/_setting.scss:3
-C:\Users\takafumi\Desktop\tech\csp-v2\start-up\htdocs\common\_sass\style.scss:8
+C:/MyKnowledge/Code/start-up/htdocs/common/_sass/lib/_setting.scss:3
+C:\MyKnowledge\Code\start-up\htdocs\common\_sass\style.scss:8
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/util.rb:1297:in `rescue in block in find_encoding_error'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/util.rb:1294:in `block in find_encoding_error'
 C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/lib/ruby/gems/2.2.0/gems/sass-3.4.20/lib/sass/util.rb:1293:in `each'
@@ -61,4 +61,4 @@ C:/Program Files/Adobe/Adobe Dreamweaver CC 2017/ruby/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid Windows-31J character \"\xE6\"\A         on line 3 of C:/Users/takafumi/Desktop/tech/csp-v2/start-up/htdocs/common/_sass/lib/_setting.scss\A         from line 8 of C:\Users\takafumi\Desktop\tech\csp-v2\start-up\htdocs\common\_sass\style.scss\A \A 1: // Font Setting\A 2: $font: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI','Noto Sans Japanese','Hiragino Kaku Gothic ProN', meiryo, sans-serif;\A 3: $serif: \"Times New Roman\", \"Hiragino Mincho ProN\", \"Yu Mincho medium\", \"Sawarabi Mincho\", \"HG明朝E\", \"ＭＳ Ｐ明朝\", serif;\A 4: \A 5: // Color Setting\A 6: $default: #292826;\A 7: \A 8: // Size Setting"; }
+  content: "Error: Invalid Windows-31J character \"\xE6\"\A         on line 3 of C:/MyKnowledge/Code/start-up/htdocs/common/_sass/lib/_setting.scss\A         from line 8 of C:\MyKnowledge\Code\start-up\htdocs\common\_sass\style.scss\A \A 1: // Font Setting\A 2: $font: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI','Noto Sans Japanese','Hiragino Kaku Gothic ProN', meiryo, sans-serif;\A 3: $serif: \"Times New Roman\", \"Hiragino Mincho ProN\", \"Yu Mincho medium\", \"Sawarabi Mincho\", \"HG明朝E\", \"ＭＳ Ｐ明朝\", serif;\A 4: \A 5: // Color Setting\A 6: $color: #292826;\A 7: \A 8: // Size Setting"; }
