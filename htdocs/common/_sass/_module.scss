@@ -1,3 +1,4 @@
+// regular style
 .clearfix:after {
   content: "";
   display: block;
@@ -5,7 +6,37 @@
 }
 .telLink {
   pointer-events: none;
+  text-decoration: none;
+  color: inherit;
   @include break2 {
     pointer-events: auto;
   }
 }
+.wrapper {
+  width: $wrapper;
+  margin: 0 auto;
+  position: relative;
+  @include break2 {
+    width: auto;
+  }
+}
+.tCenter {
+  text-align: center;
+}
+.hoverImg {
+  transition: .8s;
+  @include break2_up {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.hoverTxt {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//original style

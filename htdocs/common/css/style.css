@@ -63,7 +63,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", meiryo, sans-serif;
-  color: #292826;
+  color: #161f3e;
 }
 
 body * {
@@ -78,7 +78,7 @@ iframe[name=google_conversion_frame] {
 }
 
 input, button, textarea, select {
-  color: #292826;
+  color: #161f3e;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", meiryo, sans-serif;
 }
 
@@ -91,14 +91,6 @@ select {
   padding: 10px;
   border-radius: 5px;
   border: solid 1px #aaa;
-}
-
-a:not(.noOpa) img {
-  transition: .3s;
-}
-
-a:not(.noOpa):hover img {
-  opacity: 0.8;
 }
 
 *:focus {
@@ -118,12 +110,49 @@ img {
 
 .telLink {
   pointer-events: none;
+  text-decoration: none;
+  color: inherit;
 }
 
 @media only screen and (max-width: 750px) {
   .telLink {
     pointer-events: auto;
   }
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 750px) {
+  .wrapper {
+    width: auto;
+  }
+}
+
+.tCenter {
+  text-align: center;
+}
+
+.hoverImg {
+  transition: .8s;
+}
+
+@media only screen and (min-width: 751px) {
+  .hoverImg:hover {
+    opacity: 0.8;
+  }
+}
+
+.hoverTxt {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hoverTxt:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

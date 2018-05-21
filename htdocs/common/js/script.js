@@ -4,7 +4,8 @@ $(function(){
   var _touch = ('ontouchstart' in document) ? 'touchstart' : 'click';
   
   //Smooth Scroll
-	var headerHight = $('#headInner').height(); 
+  var headerHight = 0;
+	// var headerHight = $('#headInner').height();
 	$('a[href^="#"]').click(function(){
 		var speed = 500;
 		var href= $(this).attr("href");

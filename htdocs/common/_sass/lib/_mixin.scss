@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+@mixin serif {
+  font-family: $serif;
+}
+
 @mixin fontSize($size: 16) {
   $rem: $size / 10;
   font-size: $size + px;
@@ -36,8 +40,18 @@
 	  @content;
   }
 }
+@mixin break1_up {
+  @media only screen and (min-width: $breakPoint1 + 1) {
+	  @content;
+  }
+}
 @mixin break2 {
   @media only screen and (max-width: $breakPoint2) {
+	  @content;
+  }
+}
+@mixin break2_up {
+  @media only screen and (min-width: $breakPoint2 + 1) {
 	  @content;
   }
 }

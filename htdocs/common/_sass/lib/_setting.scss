@@ -3,12 +3,18 @@ $font: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI','Noto San
 $serif: "Times New Roman", "Hiragino Mincho ProN", "Yu Mincho medium", "Sawarabi Mincho", "HG明朝E", "ＭＳ Ｐ明朝", serif;
 
 // Color Setting
-$color: #292826;
+$color: #161f3e;
+$theme_black: #000000;
+$theme_white: #ffffff;
+$theme_blue: #161f3e;
+$theme_red: #d44629;
+$theme_red_light: lighten( $theme_red, 10%);
 
 // Size Setting
+$wrapper: 1200px;
 $breakPoint1: 1000px;
 $breakPoint2: 750px;
-$designSize: 640;
+$designSize: 750;
 $resPadding: 4%;
 
 // Weight Setting

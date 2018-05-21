@@ -32,16 +32,6 @@ select {
 	border-radius: 5px;
 	border: solid 1px #aaa;
 }
-a:not(.noOpa) {
-  img {
-    transition: .3s;
-  }
-  &:hover {
-    img {
-      opacity: 0.8;
-    }
-  }
-}
 *:focus {
 	outline:none;
 }
