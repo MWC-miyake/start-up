@@ -1,6 +1,6 @@
 <?php
 /***********************************************************
-* サムネイル機能の追加
+* サムネイルサイズの追加
 ***********************************************************/
 //add_image_size( 'list-thumbnail', 176, 100, true );
 
@@ -12,14 +12,16 @@
 function show_thumbnail( $tmp = null ) {
   global $post;
   
-  if( !has_post_thumbnail() ) {
-    return false;
-  }
-  
-  if( $tmp == 'archive' ) { // 投稿一覧ページ
-    echo '<div class="thumb"><a href="' .get_permalink(). '">' .get_the_post_thumbnail( $post->ID , 'list-thumbnail' ). '</a></div>';
-  } else {
-    return false;
+  switch ( $tmp ) {
+    case 'archive':
+      if( has_post_thumbnail() ) {
+        echo '<div class="articleList__thumb"><a href="' .get_permalink(). '" class="hoverImg">' .get_the_post_thumbnail( $post->ID , 'arhive-thumbnail' ). '</a></div>';
+      } else {
+        echo '<div class="articleList__thumb"><a href="' .get_permalink(). '" class="hoverImg"><img src="' .get_bloginfo('template_directory') .'/common/img/noimage/no_image-438x289.png" alt="NO IMAGE"/></a></div>';
+      }
+      
+    default:
+      return false;
   }
 
 }
