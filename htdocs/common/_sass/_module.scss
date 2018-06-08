@@ -5,11 +5,10 @@
   clear: both;
 }
 .telLink {
-  pointer-events: none;
-  text-decoration: none;
-  color: inherit;
-  @include break2 {
-    pointer-events: auto;
+  @include break2_up {
+    pointer-events: none;
+    text-decoration: none;
+    color: inherit;
   }
 }
 .wrapper {

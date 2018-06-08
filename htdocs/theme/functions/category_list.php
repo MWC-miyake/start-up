@@ -23,3 +23,30 @@ function show_category( $delimiter = null ) {
     }
   }
 }
+
+/***********************************************************
+* タクソノミーバージョン
+* 引数はタクソノミー、区切り文字
+* 例：show_terms('cat_hoge', '/');
+* まだ動くか見てない。動かなかったらごめんなさい
+***********************************************************/
+function show_terms( $taoxonomy = null, $delimiter = null ) {
+  global $post;
+  $cats = get_the_terms( $post->ID, $taoxonomy );
+  $tmp = $cats;
+
+  if( !$cats || !$taxonomy ) {
+    return false;
+  }
+  
+  foreach( $cats as $cat) {
+    $cat_id = $cat->term_id;
+    $cat_link = get_category_link( $cat_id );
+    
+    // 出力部分
+    echo '<a href="' .$cat_link. '">' .$cat->name. '</a>';
+    if( $delimiter && next($tmp) ) {
+      echo $delimiter;
+    }
+  }
+}

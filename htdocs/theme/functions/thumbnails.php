@@ -19,6 +19,7 @@ function show_thumbnail( $tmp = null ) {
       } else {
         echo '<div class="articleList__thumb"><a href="' .get_permalink(). '" class="hoverImg"><img src="' .get_bloginfo('template_directory') .'/common/img/noimage/no_image-438x289.png" alt="NO IMAGE"/></a></div>';
       }
+      break;
       
     default:
       return false;
