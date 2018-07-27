@@ -55,3 +55,9 @@
 	  @content;
   }
 }
+
+@mixin fontAwesome( $code, $weight:$black ) {
+  font-family: "Font Awesome 5 Pro";
+  content: $code;
+  font-weight: $weight;
+}

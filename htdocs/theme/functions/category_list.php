@@ -28,13 +28,11 @@ function show_category( $delimiter = null ) {
 * タクソノミーバージョン
 * 引数はタクソノミー、区切り文字
 * 例：show_terms('cat_hoge', '/');
-* まだ動くか見てない。動かなかったらごめんなさい
 ***********************************************************/
-function show_terms( $taoxonomy = null, $delimiter = null ) {
+function show_terms( $taxonomy = null, $delimiter = null ) {
   global $post;
-  $cats = get_the_terms( $post->ID, $taoxonomy );
+  $cats = get_the_terms( $post->ID, $taxonomy );
   $tmp = $cats;
-
   if( !$cats || !$taxonomy ) {
     return false;
   }

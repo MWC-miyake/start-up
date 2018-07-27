@@ -4,11 +4,9 @@ $serif: "Times New Roman", "Hiragino Mincho ProN", "Yu Mincho medium", "Sawarabi
 
 // Color Setting
 $color: #161f3e;
-$theme_black: #000000;
-$theme_white: #ffffff;
-$theme_blue: #161f3e;
-$theme_red: #d44629;
-$theme_red_light: lighten( $theme_red, 10%);
+$blue: #161f3e;
+$red: #d44629;
+$red_light: lighten( $red, 10%);
 
 // Size Setting
 $wrapper: 1200px;

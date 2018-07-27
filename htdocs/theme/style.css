@@ -23,7 +23,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   max-width: 100%;
 }
 .wp_post p {
-  margin-bottom: 2em;
+  margin: 1em 0;
 }
 .wp_post pre {
   white-space: pre-wrap;
@@ -31,15 +31,38 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }
 .wp_post strong { font-weight: bold; }
 .wp_post em { font-style: italic; }
-.wp_post blockquote {
-  display: block;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 40px;
-  -webkit-margin-end: 40px;
+.wp_post pre {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 7px;
+  overflow: auto;
 }
-.wp_post > *:first-child {
-  margin-top: 0px;
+.wp_post blockquote {
+  background: none repeat scroll 0 0 rgba(245, 245, 245, 0.8);
+  border: 1px solid #FFFFFF;
+  margin: 1em 0;
+  padding: 20px 55px;
+  position: relative;
+}
+.wp_post blockquote:before {
+  color: #C8C8C8;
+  content: "“";
+  font-family: serif;
+  font-size: 600%;
+  left: 0;
+  line-height: 1em;
+  position: absolute;
+  top: 0;
+}
+.wp_post blockquote:after {
+  color: #C8C8C8;
+  content: "”";
+  font-family: serif;
+  font-size: 600%;
+  line-height: 0;
+  position: absolute;
+  right: 0;
+  bottom: -16px;
 }
 .wp_post h1 {
   font-size: 2.6rem;
@@ -49,8 +72,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   margin-bottom: 1em;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #000;
-  border-top: 2px solid #000;
+  border-bottom: 2px solid #B53630;
+  border-top: 2px solid #B53630;
   clear: both;
 }
 .wp_post h2 {
@@ -61,8 +84,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   margin-bottom: 1em;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 2px solid #000;
-  border-top: 2px solid #000;
+  border-bottom: 2px solid #B53630;
+  border-top: 2px solid #B53630;
   clear: both;
 }
 .wp_post h3 {
@@ -71,7 +94,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   line-height: 1.3em;
   margin-top: 2em;
   margin-bottom: 1em;
-  border-left: 5px solid #000;
+  border-left: 5px solid #B53630;
   padding-left: 6px;
   clear: both;
 }
@@ -81,7 +104,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   line-height: 1.3em;
   margin-top: 2em;
   margin-bottom: 1em;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #B53630;
   padding-bottom: 5px;
   clear: both;
 }
@@ -104,15 +127,17 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 .wp_post table {
 	width: 100%;
-	margin-bottom: 2em;
+  margin-bottom: 2em;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 .wp_post table th {
 	background-color: #eee;
-	padding: 4px;
+	padding: 8px;
 	border: 1px solid #AAAAAA;
 }
 .wp_post table td {
-	padding: 4px;
+	padding: 8px;
 	border: 1px solid #AAAAAA;
 }
 .wp_post ul {
@@ -131,6 +156,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }
 .wp_post a:hover {
 	color: #FF0004;
+}
+.wp_post dt {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.wp_post dd {
+  margin-bottom: 20px;
 }
 /* img */
 .wp_post img {
@@ -239,6 +271,34 @@ MW WP FORM
 .mw_wp_form_confirm .inputHidden {
 	display: block !important;
 }
+.mw_wp_form input.large {
+  width: 100%;
+  max-width: 400px;
+}
+.mw_wp_form input.short {
+  width: 100%;
+  max-width: 180px;
+}
+.mw_btn_area {
+  text-align: center;
+}
+.mw_btn_area input {
+  min-width: 240px;
+  height: 60px;
+  padding: 0 10px;
+  margin: 10px;
+  color: #fff;
+  -webkit-appearance: none;
+  border-style: none;
+  background: #04c9c2;
+  cursor: pointer;
+}
+.mw_btn_area input.mw_btn_back {
+  background: #a7a7a7;
+}
+.mw_btn_area input:hover {
+  opacity: 0.8;
+}
 
 /*********************************
 Comments
@@ -327,13 +387,13 @@ h3#comments{
 /*********************************
 404
 *********************************/
-#error404 main h2 {
+.error404 h2 {
 	font-size: 30px;
 	color: #FF0004;
 	text-align: center;
 	padding: 160px 0 60px;
 }
-#error404 main p {
+.error404 p {
 	font-size: 20px;
 	text-align: center;
 	padding-bottom: 100px;
