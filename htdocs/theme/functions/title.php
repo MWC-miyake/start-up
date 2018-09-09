@@ -8,7 +8,7 @@ function show_limit_title($limit = 20) {
   
   if( mb_strlen( $title ) > $limit) {
     $title= mb_substr( $title , 0 , $limit ) ;
-    $show_title = $title. ･･･ ;
+    $show_title = $title. '･･･' ;
   } else {
     $show_title = $title;
   }

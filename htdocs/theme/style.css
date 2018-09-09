@@ -65,7 +65,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   bottom: -16px;
 }
 .wp_post h1 {
-  font-size: 2.6rem;
+  font-size: 26px;
   font-weight: bold;
   line-height: 1.3em;
   margin-top: 2em;
@@ -77,7 +77,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   clear: both;
 }
 .wp_post h2 {
-  font-size: 2.4rem;
+  font-size: 24px;
   font-weight: bold;
   line-height: 1.3em;
   margin-top: 2em;
@@ -89,7 +89,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   clear: both;
 }
 .wp_post h3 {
-  font-size: 2.0rem;
+  font-size: 20px;
   font-weight: bold;
   line-height: 1.3em;
   margin-top: 2em;
@@ -99,7 +99,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   clear: both;
 }
 .wp_post h4 {
-  font-size: 1.8rem;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.3em;
   margin-top: 2em;
@@ -109,7 +109,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   clear: both;
 }
 .wp_post h5 {
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1.3em;
   margin-top: 2em;
@@ -117,7 +117,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   clear: both;
 }
 .wp_post h6 {
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: bold;
   line-height: 1.3em;
   margin-top: 2em;
@@ -298,6 +298,24 @@ MW WP FORM
 }
 .mw_btn_area input:hover {
   opacity: 0.8;
+}
+.mw_require {
+  color: #fff;
+  background-color: red;
+  border-radius: 4px;
+  padding: 3px 8px;
+  margin-left: 4px;
+  display: inline-block;
+}
+@media screen and (max-width: 750px){
+  .mw_table,
+  .mw_table th,
+  .mw_table td,
+  .mw_table tr,
+  .mw_table tbody {
+    width: 100%;
+    display: block;
+  }
 }
 
 /*********************************

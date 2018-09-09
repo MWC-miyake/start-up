@@ -25,6 +25,7 @@ get_template_part('functions/pagenation'); // ページネーション
 get_template_part('functions/title'); // タイトルの文字数制限
 get_template_part('functions/excerpt'); // タイトルの文字数制限
 get_template_part('functions/body_class'); // bodyのclassの表示
+get_template_part('functions/comments'); // コメント欄の設定
 
 
 /** 

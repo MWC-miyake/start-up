@@ -34,7 +34,7 @@ $(function(){
   /*
   * MW WP Form
   */
- $('.mw_wp_form input[name="tel"]').attr('type','tel');
+ $('.mw_wp_form_input input[name="tel"]').attr('type','tel');
 
   /*
   * Menu and Header

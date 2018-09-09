@@ -8,7 +8,7 @@ function show_limit_excerpt($limit = 40) {
   
   if( mb_strlen( $excerpt ) > $limit) {
     $excerpt= mb_substr( $excerpt , 0 , $limit ) ;
-    $show_excerpt = $excerpt. ･･･ ;
+    $show_excerpt = $excerpt. '･･･' ;
   } else {
     $show_excerpt = $excerpt;
   }

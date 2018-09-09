@@ -2,10 +2,9 @@
 Default Style
 *******************************/
 html {
-  font-size: 62.5%; /* sets the base font to 10px for easier math */
+  
 }
 body {
-  font-size: 1.6rem;
   font-family: $font;
 	color: $color;
 	line-height: 1.5;
@@ -21,7 +20,7 @@ iframe[name=google_conversion_frame] {
 input,button,textarea,select {
 	color: $color;
 	font-family: $font;
-	font-size: 1.6rem;
+	font-size: 16px;
 }
 textarea {
 	vertical-align: top;
