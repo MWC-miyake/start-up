@@ -11,7 +11,7 @@ body {
 }
 body * {
 	-webkit-text-size-adjust: 100%;
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 iframe[name=google_conversion_frame] {
 	position: absolute;
@@ -41,4 +41,7 @@ select {
 img {
   max-width: 100%;
   height: auto;
+}
+a:hover {
+	backface-visibility: hidden;
 }

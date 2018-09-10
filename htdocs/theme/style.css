@@ -18,16 +18,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 }
 .wp_post {
   display: block;
+  text-align: left;
 }
 .wp_post * {
   max-width: 100%;
 }
 .wp_post p {
   margin: 1em 0;
-}
-.wp_post pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  font-size: 16px;
 }
 .wp_post strong { font-weight: bold; }
 .wp_post em { font-style: italic; }
@@ -36,6 +34,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   border: 1px solid #ccc;
   padding: 7px;
   overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 16px;
 }
 .wp_post blockquote {
   background: none repeat scroll 0 0 rgba(245, 245, 245, 0.8);
@@ -43,6 +44,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   margin: 1em 0;
   padding: 20px 55px;
   position: relative;
+  font-size: 16px;
 }
 .wp_post blockquote:before {
   color: #C8C8C8;
@@ -134,11 +136,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .wp_post table th {
 	background-color: #eee;
 	padding: 8px;
-	border: 1px solid #AAAAAA;
+  border: 1px solid #AAAAAA;
+  font-size: 16px;
 }
 .wp_post table td {
 	padding: 8px;
-	border: 1px solid #AAAAAA;
+  border: 1px solid #AAAAAA;
+  font-size: 16px;
 }
 .wp_post ul {
 	list-style: disc;
@@ -150,7 +154,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	padding-left: 1.2em;
 	margin-bottom: 1em;
 }
-.wp_post a {
+.wp_post ul li,
+.wp_post ol li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.wp_post a:not(.telLink) {
 	text-decoration: underline;
 	color: #003CFF;
 }
@@ -160,40 +169,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 .wp_post dt {
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 16px;
 }
 .wp_post dd {
   margin-bottom: 20px;
-}
-/* img */
-.wp_post img {
-	vertical-align: middle;
-  height: auto;
-  max-width: 100%;
-}
-.wp_post img[class*="wp-image-"],
-.wp_post img[class*="attachment-"],
-.wp_post img.pict {
-	margin: 1em 1em 2em 0;
-	vertical-align: bottom;
-}
-.wp_post img.aligncenter {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-.wp_post img.alignright {
-	padding: 4px;
-	margin: 0 0 2em 1em;
-	display: inline;
-  vertical-align: top;
-  float: right;
-}
-.wp_post img.alignleft {
-	padding: 4px;
-	margin: 0 1em 2em 0;
-	display: inline;
-  vertical-align: top;
-  float: left;
+  font-size: 16px;
 }
 
 /*Pagenation*/
