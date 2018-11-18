@@ -59,6 +59,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", meiryo, sans-serif;
   color: #161f3e;
   line-height: 1.5;
+  /*
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	*/
 }
 
 body * {
@@ -99,6 +103,11 @@ select {
 img {
   max-width: 100%;
   height: auto;
+}
+
+a:hover {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .clearfix:after {

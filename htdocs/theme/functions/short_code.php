@@ -22,13 +22,15 @@ function Url() {
 add_shortcode('url', 'Url');
 
 /***********************************************************
-* 投稿内部で、テンプレートをショートコードで呼び出す
+* テンプレートをショートコードで呼び出す
+* ex: [myphp file='my-template']
 ***********************************************************/
 /*
-function show_graph() {
+function my_php_Include( $params = array() ) {
+  extract( shortcode_atts(array('file' => 'default'), $params ) );
   ob_start();
-  get_template_part('tpl-graph'); 
+  get_template_part( $file );
   return ob_get_clean();
-}
-add_shortcode('graph', 'show_graph');
+ }
+ add_shortcode('myphp','my_php_Include');
 */
