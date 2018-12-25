@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-// Fonts
-@import "lib/font";
-
 // Include Library
 @import "lib/mixin";
 @import "lib/setting";
+
+// Fonts
+@import "lib/font";
 
 // Choose "normalize" or "reset"
 @import "normalize/reset";
@@ -14,8 +14,8 @@
 @import "base";
 
 // Styling Start
+@import "common";
 @import "layout";
-@import "module";
 @import "theme";
 @import "page/*";
 @import "state";

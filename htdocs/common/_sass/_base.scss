@@ -1,9 +1,6 @@
-/*******************************
-Default Style
-*******************************/
-html {
-  
-}
+/* ----------------------------------------------------------------------
+ basic setting
+---------------------------------------------------------------------- */
 body {
   font-family: $font;
 	color: $color;
@@ -16,10 +13,6 @@ body {
 body * {
 	-webkit-text-size-adjust: 100%;
 	box-sizing: border-box;
-}
-iframe[name=google_conversion_frame] {
-	position: absolute;
-	top: 0;
 }
 input,button,textarea,select {
 	color: $color;
@@ -40,7 +33,7 @@ select {
 	border: solid 1px #aaa;
 }
 *:focus {
-	outline:none;
+	outline: none;
 }
 img {
   max-width: 100%;

@@ -1,3 +1,6 @@
+/* --------------------------------------------------------------------------------
+ web fonts
+-------------------------------------------------------------------------------- */
 @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url(//fonts.googleapis.com/earlyaccess/sawarabimincho.css);
 /*******************************
@@ -52,9 +55,9 @@ img {
   vertical-align: middle;
 }
 
-/*******************************
-Default Style
-*******************************/
+/* ----------------------------------------------------------------------
+ basic setting
+---------------------------------------------------------------------- */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "Hiragino Kaku Gothic ProN", meiryo, sans-serif;
   color: #161f3e;
@@ -68,11 +71,6 @@ body {
 body * {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
-}
-
-iframe[name=google_conversion_frame] {
-  position: absolute;
-  top: 0;
 }
 
 input, button, textarea, select {
@@ -110,6 +108,13 @@ a:hover {
           backface-visibility: hidden;
 }
 
+/* ----------------------------------------------------------------------
+ common class
+---------------------------------------------------------------------- */
+.tCenter {
+  text-align: center;
+}
+
 .clearfix:after {
   content: "";
   display: block;
@@ -134,10 +139,6 @@ a:hover {
   .wrapper {
     width: auto;
   }
-}
-
-.center {
-  text-align: center;
 }
 
 .hoverImg {

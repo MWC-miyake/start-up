@@ -1,4 +1,8 @@
-// regular style
+/* ----------------------------------------------------------------------
+ common class
+---------------------------------------------------------------------- */
+.tCenter { text-align: center; }
+
 .clearfix:after {
   content: "";
   display: block;
@@ -18,9 +22,6 @@
   @include break2 {
     width: auto;
   }
-}
-.center {
-  text-align: center;
 }
 .hoverImg {
   transition: .3s;
@@ -46,5 +47,3 @@
   border-radius: 4px;
   margin-left: 5px;
 }
-
-//original style

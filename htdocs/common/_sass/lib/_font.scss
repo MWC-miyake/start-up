@@ -1,4 +1,17 @@
+/* --------------------------------------------------------------------------------
+ web fonts
+-------------------------------------------------------------------------------- */
 @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url(//fonts.googleapis.com/earlyaccess/sawarabimincho.css);
 
 // Add Original Font
+
+// Setting Font Awesome
+@mixin fontAwesome( $code, $weight:$black ) {
+  font-family: "Font Awesome 5 Pro";
+  content: $code;
+  font-weight: $weight;
+}
+@mixin fa-mail-bold {
+  @include fontAwesome('\f0e0');
+}

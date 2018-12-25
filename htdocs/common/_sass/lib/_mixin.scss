@@ -1,23 +1,4 @@
-@charset "utf-8";
-
-@mixin serif {
-  font-family: $serif;
-}
-
-@mixin resPadding {
-  padding-left: $resPadding;
-  padding-right: $resPadding;
-}
-
-@mixin resFontSize($size: 16) {
-  font-size: ($size / $designSize)*100 + vw;
-}
-
-@mixin floatNon {
-  float: none;
-  width: auto;
-}
-
+// break point
 @mixin break1 {
   @media only screen and (max-width: $breakPoint1) {
 	  @content;
@@ -39,8 +20,16 @@
   }
 }
 
-@mixin fontAwesome( $code, $weight:$black ) {
-  font-family: "Font Awesome 5 Pro";
-  content: $code;
-  font-weight: $weight;
+// other mixins
+@mixin serif {
+  font-family: $serif;
+}
+
+@mixin resPadding {
+  padding-left: $resPadding;
+  padding-right: $resPadding;
+}
+
+@mixin resFontSize($size: 16) {
+  font-size: ($size / $designSize)*100 + vw;
 }
