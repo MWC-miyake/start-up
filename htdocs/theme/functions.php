@@ -3,6 +3,7 @@
 * Add Theme Supports
 * WordPressのテーマ拡張機能の有効化
 */
+add_filter('use_block_editor_for_post', '__return_false'); // Gtenbergの無効化
 // add_theme_support('menus'); // メニュー機能
 // add_theme_support('post-thumbnails'); // サムネイル機能
 
@@ -30,7 +31,7 @@ get_template_part('functions/short_code'); // ショートコード集
 // get_template_part('functions/pref_lists'); // ACFで都道府県を使うとき便利な関数たち
 // get_template_part('functions/show_id'); // 投稿一覧IDを表示させる
 // get_template_part('functions/custom_search'); // カスタム投稿タイプの検索機能
-
+// get_template_part('functions/first_image_thumb'); // 最初の画像をサムネイルにするときのやりかた
 
 /**
 * Theme Customizer
