@@ -27,6 +27,7 @@ get_template_part('functions/short_code'); // ショートコード集
 // get_template_part('functions/excerpt'); // 抜粋の文字数制限
 // get_template_part('functions/body_class'); // bodyのclassの表示
 // get_template_part('functions/comments'); // コメント欄の設定
+// get_template_part('functions/admin_menu_customize'); // 管理画面メニューカスタマイズ
 // get_template_part('functions/admin_css'); // 管理画面用CSS
 // get_template_part('functions/pref_lists'); // ACFで都道府県を使うとき便利な関数たち
 // get_template_part('functions/show_id'); // 投稿一覧IDを表示させる
