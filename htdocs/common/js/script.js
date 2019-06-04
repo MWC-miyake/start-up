@@ -10,8 +10,8 @@ $(window).on('load',function(){
 });
 
 /*
-* Smooth Scroll
-*/
+ * Smooth Scroll
+ */
 function smoothScroll() {
   const headerHight = 0;
   // const headInner = $("#headInner");
@@ -27,8 +27,8 @@ function smoothScroll() {
 }
 
 /*
-* MW WP Form
-*/
+ * MW WP Form
+ */
 function changeTypeTel() {
   $('.mw_wp_form_input input[name="tel"]').attr('type','tel');
 }

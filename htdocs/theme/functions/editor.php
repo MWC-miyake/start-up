@@ -1,10 +1,13 @@
 <?php
 /***********************************************************
-* spanタグ有効
+* ビジュアルエディタの余計な機能を無効化する
 ***********************************************************/
 function my_tiny_mce_before_init( $init_array ) {
+    global $allowedposttags;
+
     $init_array['valid_elements']          = '*[*]';
     $init_array['extended_valid_elements'] = '*[*]';
+    $init_array['valid_children']          = '+a[' . implode( '|', array_keys( $allowedposttags ) ) . ']';
 
     return $init_array;
 }
