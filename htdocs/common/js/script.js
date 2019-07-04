@@ -1,8 +1,8 @@
-'use strict';
-
 $(function(){
   // When Document Ready
-  smoothScroll();
+  $(document).on('click','[href^="#"]' + '[href!="#"]' ,scroll_func);
+  $(document).on('click', '#pageTop', function () { scroll_func('top'); });
+  
   changeTypeTel();
 });
 $(window).on('load',function(){
@@ -12,18 +12,15 @@ $(window).on('load',function(){
 /*
  * Smooth Scroll
  */
-function smoothScroll() {
-  const headerHight = 0;
-  // const headInner = $("#headInner");
-  // const headerHight = headInner.innerHeight();
-	$('a[href^="#"]').click(function(){
-		const speed = 500;
-		const href= $(this).attr("href");
-		const target = $(href == "#" || href == "" ? 'html' : href);
-		const position = target.offset().top - headerHight;
-		$("html, body").animate({ scrollTop:position }, speed, "swing");
-		return false;
-  });
+var scroll_func = function (top) {
+  var headerHeight = $('#header').outerHeight(); // 数値にしてもいい
+  var speed = 500;
+	if(top=="top"){
+		$('html,body').scrollTop(800).stop().animate({ scrollTop: 0 }, speed,'swing');
+	}else{
+		$('html,body').animate({ scrollTop: $($(this).attr('href')).offset().top - headerHeight }, speed,'swing');
+	}
+	return false;
 }
 
 /*
