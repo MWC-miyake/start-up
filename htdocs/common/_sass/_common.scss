@@ -1,6 +1,19 @@
 /* ----------------------------------------------------------------------
  common class
 ---------------------------------------------------------------------- */
+@include break2_up {
+  .pc-non {
+    display: none !important;
+  }
+}
+@include break2 {
+  .sp-non {
+    display: none !important;
+  }
+}
+
+.mb0 { margin-bottom: 0; }
+
 .tCenter { text-align: center; }
 
 .clearfix:after {

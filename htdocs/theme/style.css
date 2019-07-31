@@ -424,3 +424,12 @@ h3#comments{
 	text-align: center;
 	padding-bottom: 100px;
 }
+
+/*********************************
+ログイン画面
+*********************************/
+.login h1 a {
+  background-size: 84px;
+  width: 84px;
+  height: 84px;
+}

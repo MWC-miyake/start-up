@@ -28,9 +28,9 @@ jpgとpngを適宜使い分ける。jpgは画質80で切り出す
 
 ■■レスポンシブについて■■
 viewportは固定（例：<meta name="viewport" content="width=750">）にせず、
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width">
 とする。別途指示がある場合はそちらを優先すること。
-ブレークポイントは特に指定がない限り、750pxとする。その他必要があれば適宜追加する。
+ブレイクポイントは特に指定がない限り、750pxとする。その他必要があれば適宜追加する。
 
 
 ■■HTML記述ルール■■
@@ -45,7 +45,7 @@ viewportは固定（例：<meta name="viewport" content="width=750">）にせず、
 ・子孫セレクタはできればあまり使わないようにし、子セレクタを使うようにする。
 ・入れ子は２つまでを心掛ける。（３階層まで）
 ・レスポンシブの記述は、各記述のすぐ下に書く。
-・_state,_vend以外は"!important"を使用しない。（どうしてもという場合は仕方ない）
+・_vend以外は"!important"を使用しない。（どうしてもという場合は仕方ない）
 
 
 ■■Sass(scss)を使用しない場合■■
@@ -82,21 +82,13 @@ _normalize.scss or _reset.scss、どちらかの読み込みを選択する。
 
 ■■CSS設計について■■
 ・_common.scss
+どのサイトでも使用する汎用クラス（mb0、pc-non等）
+
+・_module.scss
 再利用可能なパーツ。ページを構成する個々のコンポーネント（部品）で、
 BEMの対象としない。（連結しない）
 モジュールはさまざまな要素で利用される可能性があるので、特定の要素に依存しないようにする。
 特定の要素のためにモジュールを作る必要がある場合は、子セレクタや子孫セレクタでの対応にする。
-
-・_state.scss
-ステートルールは、レイアウトやモジュールのクラスと合わせて使う。
-ステートの命名ルールは is- から始まるものとして、特定のレイアウトに依存しているものはレイアウト名を含めるようにする。
-BEMの対象外。主にjavascriptによって付与されるclassを扱う。
-例：.is-active .is-search-active
-
-・_theme.scss
-カラーや背景等、見た目に関わる部分を定義する。
-BEMの対象とせず、主に単独class
-例：.red .bdBlue .bdGray
 
 ・page …各ページごとに何か上書きしたいとき（見出し画像等）
 例：_about.scss

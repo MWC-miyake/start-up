@@ -3,9 +3,9 @@
 -------------------------------------------------------------------------------- */
 @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 @import url(//fonts.googleapis.com/earlyaccess/sawarabimincho.css);
-/*******************************
-Reset CSS (exclude "sup")
-*******************************/
+/* ----------------------------------------------------------------------
+ reset (exculding 'sup')
+---------------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -109,8 +109,30 @@ a:hover {
 }
 
 /* ----------------------------------------------------------------------
+ page
+---------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------
+ Module
+---------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------
  common class
 ---------------------------------------------------------------------- */
+@media only screen and (min-width: 751px) {
+  .pc-non {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .sp-non {
+    display: none !important;
+  }
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
 .tCenter {
   text-align: center;
 }
