@@ -7,6 +7,10 @@ $(function(){
 });
 $(window).on('load',function(){
   // When Window Load
+
+  // アンカーリンクがたまにずれるのを強制的に戻す
+  if(window.location.hash==""){return;}
+  document.getElementById(window.location.hash.slice(1)).scrollIntoView(true);
 });
 
 /*
