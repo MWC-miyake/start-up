@@ -18,7 +18,7 @@ add_filter( 'tiny_mce_before_init' , 'my_tiny_mce_before_init' );
 ***********************************************************/
 function disable_visual_editor_in_page(){
 	global $typenow;
-	if( $typenow == 'page' ){
+	if( $typenow == 'page' || $typenow == 'mw-wp-form' ){
 		add_filter('user_can_richedit', 'disable_visual_editor_filter');
 	}
 }
