@@ -19,6 +19,11 @@
 	  @content;
   }
 }
+@mixin ieHack {
+  @media all and (-ms-high-contrast:none) {
+    @content;
+  }
+}
 
 // other mixins
 @mixin serif {

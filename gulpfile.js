@@ -6,6 +6,8 @@ var browser = require('browser-sync');
 var plumber = require('gulp-plumber');
 var sourcemaps = require('gulp-sourcemaps');
 var wait = require('gulp-wait');
+var postcss = require('gulp-postcss');
+var mqpacker = require('css-mqpacker');
 
 gulp.task('server', function() {
   browser({
@@ -19,10 +21,9 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(wait(100))
-    .pipe(sass({
-      outputStyle: 'expanded'
-    }))
+    .pipe(sass({outputStyle: 'expanded'}))
     .pipe(autoprefixer())
+    .pipe(postcss([mqpacker()]))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('htdocs/common/css'))
     .pipe(browser.reload({

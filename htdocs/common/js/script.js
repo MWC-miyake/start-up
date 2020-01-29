@@ -1,29 +1,36 @@
 $(function(){
   // When Document Ready
-  $(document).on('click','[href^="#"]' + '[href!="#"]' ,scroll_func);
-  $(document).on('click', '#pageTop', function () { scroll_func('top'); });
-  
+  smoothScroll();
   changeTypeTel();
 });
 $(window).on('load',function(){
   // When Window Load
-
-  // アンカーリンクがたまにずれるのを強制的に戻す
-  if(window.location.hash==""){return;}
-  document.getElementById(window.location.hash.slice(1)).scrollIntoView(true);
 });
 
 /*
  * Smooth Scroll
  */
-var scroll_func = function (top) {
-  var headerHeight = $('#header').outerHeight(); // 数値にしてもいい
-  var speed = 500;
-	if(top=="top"){
-		$('html,body').scrollTop(800).stop().animate({ scrollTop: 0 }, speed,'swing');
-	}else{
-		$('html,body').animate({ scrollTop: $($(this).attr('href')).offset().top - headerHeight }, speed,'swing');
-	}
+function smoothScroll() {
+  // var headerHeight = 0;
+  var headerHeight = $('#header').outerHeight();
+  if ($(window).width() < 750) {
+    headerHeight = $('.headerSp').outerHeight();
+  }
+  var urlHash = location.hash;
+  if(urlHash) {
+      $('body,html').stop().scrollTop(0);
+      setTimeout(function(){
+          var target = $(urlHash);
+          var position = target.offset().top - headerHeight;
+          $('body,html').stop().animate({scrollTop:position}, 200);
+      }, 100);
+  }
+  $('[href^="#"]' + '[href!="#"]').click(function() {
+      var href= $(this).attr("href");
+      var target = $(href);
+      var position = target.offset().top - headerHeight;
+      $('body,html').stop().animate({scrollTop:position}, 500);
+  });
 	return false;
 }
 
