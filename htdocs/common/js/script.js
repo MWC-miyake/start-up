@@ -35,6 +35,38 @@ function smoothScroll() {
 }
 
 /*
+ * Go Top
+ */
+function goTop() {
+  var topBtn = $('#goTop');
+  topBtn.hide();
+
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 100) {
+      topBtn.fadeIn();
+    } else {
+      topBtn.fadeOut();
+    }
+
+    scrollHeight = $(document).height();
+    scrollPosition = $(window).height() + $(window).scrollTop();
+    footHeight = $(".footerBottom").innerHeight();
+    if ( scrollHeight - scrollPosition  <= footHeight ) {
+      topBtn.css({
+        "position":"absolute",
+        "bottom": footHeight + 65
+      });
+    } else {
+      topBtn.css({
+      "position":"fixed",
+      "bottom": "20px"
+    });
+    }
+
+  });
+}
+
+/*
  * MW WP Form
  */
 function changeTypeTel() {
