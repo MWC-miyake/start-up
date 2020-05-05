@@ -19,22 +19,29 @@
 	  @content;
   }
 }
+
+// other mixins
 @mixin ieHack {
   @media all and (-ms-high-contrast:none) {
     @content;
   }
 }
-
-// other mixins
 @mixin serif {
   font-family: $serif;
 }
 
-@mixin resPadding {
-  padding-left: $resPadding;
-  padding-right: $resPadding;
+@function vw( $size: 16 ) {
+  $vw: $size * (100 / $pcDesignSize) + vw;
+  @return $vw;
+}
+@function svw( $size: 16 ) {
+  $svw: $size * (100 / $spDesignSize) + vw;
+  @return $svw;
 }
 
-@mixin resFontSize($size: 16) {
-  font-size: ($size / $designSize)*100 + vw;
+@mixin hoverLink() {
+  transition: opacity .3s;
+  &:hover {
+    opacity: 0.8;
+  }
 }

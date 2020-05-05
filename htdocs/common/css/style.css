@@ -132,6 +132,11 @@ a:hover {
   clear: both;
 }
 
+.telLink {
+  color: inherit;
+  text-decoration: none;
+}
+
 .wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -167,8 +172,6 @@ a:hover {
   }
   .telLink {
     pointer-events: none;
-    text-decoration: none;
-    color: inherit;
   }
   .hoverImg:hover {
     opacity: 0.7;
