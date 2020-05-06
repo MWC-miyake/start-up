@@ -34,6 +34,7 @@ get_template_part('functions/short_code'); // ショートコード集
 // get_template_part('functions/custom_search'); // カスタム投稿タイプの検索機能
 // get_template_part('functions/first_image_thumb'); // 最初の画像をサムネイルにするときのやりかた
 // get_template_part('functions/custom_per_page'); // カスタム投稿タイプごとに表示数を変える
+get_template_part('functions/custom_option_page'); // ACF Option Page
 
 /**
 * Theme Customizer
