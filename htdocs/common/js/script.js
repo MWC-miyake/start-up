@@ -13,9 +13,7 @@ $(window).on('load',function(){
 function smoothScroll() {
   // var headerHeight = 0;
   var headerHeight = $('#header').outerHeight();
-  if ($(window).width() < 750) {
-    headerHeight = $('.headerSp').outerHeight();
-  }
+
   var urlHash = location.hash;
   if(urlHash) {
       $('body,html').stop().scrollTop(0);
