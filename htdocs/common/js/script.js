@@ -68,5 +68,6 @@ function goTop() {
  * MW WP Form
  */
 function changeTypeTel() {
-  $('.mw_wp_form_input input[name="tel"]').attr('type','tel');
+  $('.mw_wp_form_input input[name="tel"]').attr('type', 'tel');
+  // $('.mw_wp_form_input input[name="title"],.mw_wp_form_input input[name="area"],.mw_wp_form_input input[name="date"]').attr('readonly',true);
 }
