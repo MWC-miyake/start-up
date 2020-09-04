@@ -58,3 +58,33 @@ function limit_custom_excerpt($limit = 40) {
 
   return $show_excerpt;
 }
+
+/**
+* カスタムフィールドからの抜粋
+*/
+function limit_field( $limit = 40, $field ) {
+
+  if( $field ) {
+    $excerpt = get_field( $field );
+    if( $excerpt ) {
+      $excerpt = strip_shortcodes( $excerpt );
+      $excerpt = strip_tags( $excerpt );
+      $excerpt = str_replace( '&nbsp;', '', $excerpt );
+      $excerpt = preg_replace( '/\n+/', '', $excerpt);
+    } else {
+      return '';
+    }
+  } else {
+    return '';
+  }
+
+  // 設定文字数以上ならトリミング
+  if( mb_strlen( $excerpt ) > $limit) {
+    $excerpt = mb_substr( $excerpt , 0 , $limit ) ;
+    $show_excerpt = $excerpt. '…' ;
+  } else {
+    $show_excerpt = $excerpt;
+  }
+
+  return $show_excerpt;
+}

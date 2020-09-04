@@ -14,8 +14,8 @@
 @import "base";
 
 // Styling Start
-@import "layout";
+@import "layout/*";
 @import "page/*";
-@import "module";
+@import "module/*";
 @import "common";
 @import "vend";
