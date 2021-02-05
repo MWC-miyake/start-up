@@ -17,6 +17,7 @@ get_template_part('functions/editor'); // エディターに関するカスタ�
 // get_template_part('functions/menu'); //メニュー機能のカスタマイズ用
 get_template_part('functions/mobile'); // スマホ分岐
 get_template_part('functions/short_code'); // ショートコード集
+get_template_part('functions/preview_add_acf'); // ACFの値もプレビューできるようにする
 // get_template_part('functions/widgets'); // ウィジェットの設定
 // get_template_part('functions/category_list'); // カテゴリー表示させたりする
 // get_template_part('functions/new'); // Newマーク

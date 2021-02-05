@@ -32,3 +32,35 @@ function get_my_thumbnail( $tmp = null ) {
   }
 
 }
+
+/**
+* 柔軟コンテンツの場合
+* 中身はカスタムフィールドの構造により適宜修正すること
+*/
+function get_contentfield_img( $size = NULL ) {
+  $thumb = '';
+  $thumb_arr = [];
+
+  // カスタムフィールドから内容を取得する処理
+  if( have_rows('blog_content') ){
+    while ( have_rows('blog_content') ){
+      the_row();
+
+      if( get_row_layout() == 'blog_content_img' ) {
+        $thumb = get_sub_field( 'blog_content_img_img' );
+
+        if( !$thumb ) {
+          $thumb = '';
+        } elseif( $size ) {
+          $thumb = $thumb['sizes'][$size];
+        } else {
+          $thumb = $thumb['url'];
+        }
+
+        $thumb_arr[] = $thumb;
+      }
+    }
+  }
+
+  return $thumb_arr[0];
+}

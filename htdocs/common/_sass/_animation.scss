@@ -1,0 +1,111 @@
+/* ----------------------------------------------------------------------
+ animation
+---------------------------------------------------------------------- */
+@include break2_up {
+  .ani-hidden {
+    overflow: hidden;
+  }
+  .ani-fade-right {
+    opacity: 0;
+    transform: translate(-60px, 0);
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+  }
+  .ani-fade-down {
+    opacity: 0;
+    transform: translate(0, -60px);
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+  }
+  .ani-fade-up {
+    opacity: 0;
+    transform: translate(0, 60px);
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+  }
+  .ani-fade-left {
+    opacity: 0;
+    transform: translate(60px, 0);
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+  }
+  .ani-slide-left {
+    transform: translate(100%, 0);
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+  }
+  .ani-bounce {
+    opacity: 0;
+  }
+  .ani-start-scroll {
+    &.is-active {
+      .ani-fade-right,
+      &.ani-fade-right {
+        transform: translate(0,0);
+        opacity: 1;
+      }
+      .ani-fade-down,
+      &.ani-fade-down {
+        transform: translate(0,0);
+        opacity: 1;
+      }
+      .ani-fade-up,
+      &.ani-fade-up {
+        transform: translate(0,0);
+        opacity: 1;
+      }
+      .ani-fade-left,
+      &.ani-fade-left {
+        transform: translate(0,0);
+        opacity: 1;
+      }
+      .ani-slide-left,
+      &.ani-slide-left {
+        transform: translate(0,0);
+        opacity: 1;
+      }
+      .ani-bounce,
+      &.ani-bounce {
+        animation-name: bounce;
+        animation-duration: .4s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode:both;
+      }
+    }
+  }
+  .ani-delay-1 {
+    transition-delay: .2s;
+    animation-delay: .2s;
+  }
+  .ani-delay-2 {
+    transition-delay: .4s;
+    animation-delay: .4s;
+  }
+  .ani-delay-3 {
+    transition-delay: .6s;
+    animation-delay: .6s;
+  }
+  .ani-delay-4 {
+    transition-delay: .8s;
+    animation-delay: .8s;
+  }
+  .ani-delay-5 {
+    transition-delay: 1s;
+    animation-delay: 1s;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    opacity: 0;
+    transform: translate(0, -60px);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
