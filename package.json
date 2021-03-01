@@ -21,8 +21,5 @@
     "gulp-wait": "0.0.2",
     "postcss": "^8.2.6"
   },
-  "dependencies": {
-    "gulp-connect": "^5.7.0",
-    "gulp-webserver": "^0.9.1"
-  }
+  "dependencies": {}
 }
