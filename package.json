@@ -9,17 +9,20 @@
   "author": "TakafumiMiyake",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "coffeescript": "^1.12.7",
+    "browser-sync": "^2.26.14",
     "css-mqpacker": "^7.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sass-glob": "^1.0.8",
-    "gulp-sourcemaps": "^2.6.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-wait": "0.0.2",
-    "postcss": "^7.0.26"
+    "postcss": "^8.2.6"
+  },
+  "dependencies": {
+    "gulp-connect": "^5.7.0",
+    "gulp-webserver": "^0.9.1"
   }
 }

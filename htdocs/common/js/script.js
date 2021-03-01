@@ -7,6 +7,27 @@ $(window).on('load',function(){
 });
 
 /*
+* Viewport
+* タブレットだけviewportを変えたいときにOnにする。
+*/
+function tbViewport() {
+  const ua = navigator.userAgent
+
+  const sp = ua.indexOf('iPhone') > -1 ||
+    (ua.indexOf('Android') > -1 && ua.indexOf('Mobile') > -1)
+
+  const tab = !sp && (
+    ua.indexOf('iPad') > -1 ||
+    (ua.indexOf('Macintosh') > -1 && 'ontouchend' in document) ||
+    ua.indexOf('Android') > -1
+  )
+
+  if (tab) {
+    $('meta[name="viewport"]').attr('content','width=1040')
+  }
+}
+
+/*
  * Smooth Scroll
  */
 function smoothScroll() {

@@ -1,3 +1,19 @@
+# gulpについて
+gulpは主にscssのコンパイルと、browser-syncのみに使用しています。
+gulpfile.jsのあるディレクトリへ移動し、
+```
+npm install
+```
+でインストールしたあと、
+```
+gulp
+```
+で動きます。
+
+XAMPPを使用する場合は、gulpfile.js内の変数"use_xampp"を切り換え、
+proxyを設定してください。
+
+
 # コーディングルール
 **★必須ルールと任意ルールがあります★**
 
