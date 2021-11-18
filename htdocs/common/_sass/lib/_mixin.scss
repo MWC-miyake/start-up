@@ -29,6 +29,9 @@
 @mixin serif {
   font-family: $serif;
 }
+@mixin line-height( $font-size:16, $line-height:32 ) {
+  line-height: $line-height/$font-size;
+}
 
 @function vw( $size: 16 ) {
   $vw: $size * (100 / $pcDesignSize) + vw;

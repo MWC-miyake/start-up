@@ -49,6 +49,12 @@ function smoothScroll() {
       var position = target.offset().top - headerHeight;
       $('body,html').stop().animate({scrollTop:position}, 500);
   });
+  $('.js-scroll').on('click', function () {
+    var href= $(this).attr("href");
+    var target = $(href.substring(href.indexOf('#')));
+    var position = target.offset().top - headerHeight;
+    $('body,html').stop().animate({scrollTop:position}, 500);
+  });
 	return false;
 }
 
@@ -87,7 +93,7 @@ function goTop() {
 /*
  * MW WP Form
  */
-function changeTypeTel() {
+function custmForm() {
   $('.mw_wp_form_input input[name="tel"]').attr('type', 'tel');
   // $('.mw_wp_form_input input[name="title"],.mw_wp_form_input input[name="area"],.mw_wp_form_input input[name="date"]').attr('readonly',true);
 }
