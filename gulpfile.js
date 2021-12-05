@@ -4,7 +4,7 @@
 * XAMPPで使用する場合は use_xampp と paths.proxy の２つを設定する
 */
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var sassGlob = require('gulp-sass-glob');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');

@@ -62,9 +62,9 @@ body {
   color: #161f3e;
   line-height: 1.5;
   /*
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  */
 }
 
 body * {
@@ -99,7 +99,6 @@ a:hover {
 /* ----------------------------------------------------------------------
  common class
 ---------------------------------------------------------------------- */
-
 .mb0 {
   margin-bottom: 0;
 }
@@ -126,14 +125,13 @@ a:hover {
 }
 
 .hoverImg {
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .hoverTxt {
   text-decoration: none;
   color: inherit;
 }
-
 .hoverTxt:hover {
   text-decoration: underline;
 }
@@ -157,15 +155,12 @@ a:hover {
 .form-require {
   color: #d44629;
 }
-
 .form-select {
   padding: 10px;
 }
-
 .form-text {
   padding: 10px;
 }
-
 .form-textarea {
   padding: 10px;
 }
@@ -201,5 +196,4 @@ a:hover {
     width: auto;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
