@@ -1,3 +1,4 @@
+@use "sass:math";
 // break point
 @mixin break1 {
   @media only screen and (max-width: $breakPoint1) {
@@ -34,11 +35,11 @@
 }
 
 @function vw( $size: 16 ) {
-  $vw: $size * (100 / $pcDesignSize) + vw;
+  $vw: $size * math.div(100, $pcDesignSize) + vw;
   @return $vw;
 }
 @function svw( $size: 16 ) {
-  $svw: $size * (100 / $spDesignSize) + vw;
+  $svw: $size * math.div(100, $spDesignSize) + vw;
   @return $svw;
 }
 

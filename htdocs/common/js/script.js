@@ -1,4 +1,5 @@
-$(function(){
+// tbViewport()
+$(function () {
   // When Document Ready
   smoothScroll();
 });
@@ -10,7 +11,12 @@ $(window).on('load',function(){
 * Viewport
 * タブレットだけviewportを変えたいときにOnにする。
 */
+/*
+* Viewport
+* タブレットだけviewportを変えたいときにOnにする。
+*/
 function tbViewport() {
+  const baseW = 1120;
   const ua = navigator.userAgent
 
   const sp = ua.indexOf('iPhone') > -1 ||
@@ -23,8 +29,10 @@ function tbViewport() {
   )
 
   if (tab) {
-    $('meta[name="viewport"]').attr('content','width=1040')
+    viewportContent = "width=" + baseW + "px,user-scalable=no,shrink-to-fit=yes";
+    document.querySelector("meta[name='viewport']").setAttribute("content", viewportContent);
   }
+
 }
 
 /*
