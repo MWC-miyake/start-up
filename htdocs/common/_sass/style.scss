@@ -1,21 +1,27 @@
 @charset "UTF-8";
 
 // Include Library
-@import "lib/mixin";
-@import "lib/setting";
+@use "lib/mixin";
+@use "lib/setting";
 
 // Fonts
-@import "lib/font";
+@use "lib/font";
 
 // Choose "normalize" or "reset"
-@import "normalize/reset";
+@use "normalize/reset";
 
 // Include Base Style
-@import "base";
+@use "base";
 
 // Styling Start
-@import "common";
-@import "module/*";
-@import "layout/*";
-@import "page/*";
-@import "vend";
+@use "common";
+
+@use "module/button";
+
+@use "layout/header";
+@use "layout/main";
+@use "layout/footer";
+
+@use "page/page";
+
+@use "vend";

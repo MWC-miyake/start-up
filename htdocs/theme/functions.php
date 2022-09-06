@@ -37,6 +37,7 @@ get_template_part('functions/preview_add_acf'); // ACFの値もプレビュー�
 // get_template_part('functions/custom_per_page'); // カスタム投稿タイプごとに表示数を変える
 // get_template_part('functions/custom_option_page'); // ACF Option Page
 // get_template_part('functions/custom_form'); // フォームプラグインのカスタマイズ
+// get_template_part('functions/add_archive_ogp'); // アーカイブページ用にOGP画像を出力する
 
 /**
 * Theme Customizer

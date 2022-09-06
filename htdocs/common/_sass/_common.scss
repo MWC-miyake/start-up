@@ -1,12 +1,14 @@
+@use 'lib/mixin';
+@use 'lib/setting';
 /* ----------------------------------------------------------------------
  common class
 ---------------------------------------------------------------------- */
-@include break2_up {
+@include mixin.break2_up {
   .pc-non {
     display: none !important;
   }
 }
-@include break2 {
+@include mixin.break2 {
   .sp-non {
     display: none !important;
   }
@@ -24,21 +26,21 @@
 .telLink {
   color: inherit;
   text-decoration: none;
-  @include break2_up {
+  @include mixin.break2_up {
     pointer-events: none;
   }
 }
 .wrapper {
-  width: $wrapper;
+  width: setting.$wrapper;
   margin: 0 auto;
   position: relative;
-  @include break2 {
+  @include mixin.break2 {
     width: auto;
   }
 }
 .hoverImg {
   transition: .3s;
-  @include break2_up {
+  @include mixin.break2_up {
     &:hover {
       opacity: 0.7;
     }
@@ -53,7 +55,7 @@
 }
 .require {
   display: inline-block;
-  background-color: $red;
+  background-color: setting.$red;
   color: #fff;
   font-size: 1.4rem;
   padding: 3px 5px;

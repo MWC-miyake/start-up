@@ -1,9 +1,11 @@
+@use 'lib/font';
+@use 'lib/setting';
 /* ----------------------------------------------------------------------
  basic setting
 ---------------------------------------------------------------------- */
 body {
-  font-family: $font;
-	color: $color;
+  font-family: setting.$font;
+	color: setting.$color;
 	line-height: 1.5;
 	/*
 	-webkit-font-smoothing: antialiased;
@@ -15,8 +17,8 @@ body * {
 	box-sizing: border-box;
 }
 input,button,textarea,select {
-	color: $color;
-	font-family: $font;
+	color: setting.$color;
+	font-family: setting.$font;
 	font-size: 16px;
 }
 textarea {

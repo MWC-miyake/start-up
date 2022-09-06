@@ -12,7 +12,7 @@ var plumber = require('gulp-plumber');
 var sourcemaps = require('gulp-sourcemaps');
 var wait = require('gulp-wait');
 var postcss = require('gulp-postcss');
-var mqpacker = require('css-mqpacker');
+var notify = require('gulp-notify');
 
 const use_xampp = false; // XAMPPを使う場合、trueにする
 //setting : paths
@@ -52,13 +52,14 @@ task('html', function() {
 
 task('sass', function() {
   return src(paths.cssSrc)
-    .pipe(plumber())
+    .pipe(plumber({
+      errorHandler: notify.onError('<%= error.message %>')
+    }))
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(wait(100))
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(autoprefixer())
-    .pipe(postcss([mqpacker()]))
     .pipe(sourcemaps.write('./'))
     .pipe(dest(paths.cssDist))
     .pipe(browserSync.reload({
