@@ -4,7 +4,16 @@
 ***********************************************************/
 
 // 自動整形禁止
-add_filter( 'mwform_content_wpautop_mw-wp-form', '__return_false' );
+mvwpform_autop_filter();
+function mvwpform_autop_filter() {
+	if (class_exists('MW_WP_Form_Admin')) {
+		$mw_wp_form_admin = new MW_WP_Form_Admin();
+		$forms = $mw_wp_form_admin->get_forms();
+		foreach ($forms as $form) {
+			add_filter('mwform_content_wpautop_mw-wp-form-' . $form->ID, '__return_false');
+		}
+	}
+}
 
 // バリデーション「日本語を含む」を追加する
 if ( class_exists( 'MW_WP_Form_Abstract_Validation_Rule' ) ) {
