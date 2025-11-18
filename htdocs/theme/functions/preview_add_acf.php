@@ -27,7 +27,7 @@ add_filter('get_post_metadata', function($meta_value, $post_id, $meta_key, $sing
  
 add_action('wp_insert_post', function ($postId) {
     global $wpdb;
-    if( !$_POST['fields'] ) {
+    if( !isset($_POST['fields']) ) {
         return false;
     }
     if (wp_is_post_revision($postId)) {

@@ -3,6 +3,9 @@
 * MW WP Form カスタマイズ
 ***********************************************************/
 
+// 自動整形禁止
+add_filter( 'mwform_content_wpautop_mw-wp-form', '__return_false' );
+
 // バリデーション「日本語を含む」を追加する
 if ( class_exists( 'MW_WP_Form_Abstract_Validation_Rule' ) ) {
 	class MW_WP_Form_Validation_Rule_Japanese extends MW_WP_Form_Abstract_Validation_Rule {
